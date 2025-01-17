@@ -1,5 +1,8 @@
 {
     "name": "zorzi23/grammi_core",
+    "description": "Core library providing lexer, parser, and interpreter structures.",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "GrammiCore\\": "src/"
