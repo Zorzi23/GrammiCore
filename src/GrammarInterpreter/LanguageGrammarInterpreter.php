@@ -492,7 +492,7 @@ class LanguageGrammarInterpreter extends LanguageGrammarAbstractWrapper {
      * @return array|null
      */
     private function getReservedTypeValueFromName(string $sReservedType, string $sName): ?array {
-        foreach ($this->getReservedType($sReservedType) as $aFunction) {
+        foreach ($this->getReservedType($sReservedType) ?: [] as $aFunction) {
             if (!array_key_exists('name', $aFunction)) { 
                 continue;
             }
@@ -511,7 +511,7 @@ class LanguageGrammarInterpreter extends LanguageGrammarAbstractWrapper {
      * @return bool
      */
     private function removeReservedTypeValueFromName(string $sReservedType, string $sName): bool {
-        foreach ($this->getReservedType($sReservedType) as $iFunction => &$aFunction) {
+        foreach ($this->getReservedType($sReservedType) ?: [] as $iFunction => &$aFunction) {
             if (!array_key_exists('name', $aFunction)) { 
                 continue;
             }
