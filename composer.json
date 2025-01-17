@@ -1,0 +1,16 @@
+{
+    "name": "zorzi23/grammi_core",
+    "autoload": {
+        "psr-4": {
+            "GrammiCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gustavo Zorzi",
+            "email": "gustavozorzi2003@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
